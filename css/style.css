@@ -21,15 +21,22 @@ body{
     font-family: Poppins;
     color: #666666;
 }
+
+/*? -------------------------------------- */
+
 .wrapper{
     overflow: hidden;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
+
+/*? -------------------------------------- */
+
 .page{
-    display: flex;
     flex: 1 1 auto;
+}
+.page__main {
 }
 a{
     text-decoration: none;
@@ -44,6 +51,11 @@ li{
 }
 /*? -----HEADER-------------------------------- */
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
 }
 .header__container {
     padding-top: 5px;
@@ -53,17 +65,9 @@ li{
     min-height: 152px;
     align-items: center;
 }
-.header__logo {
-}
-.header__menu {
-}
-.menu {
-}
 .menu__list {
     display: flex;
     gap: 56px;
-}
-.menu__item {
 }
 .menu__link {
     font-weight: 500;
@@ -74,4 +78,68 @@ li{
 .menu__link:hover {
     text-decoration: underline;
     font-size: 16px;
+}
+/*? -----MAIN-------------------------------- */
+
+
+.main {
+    padding-bottom: 80px;
+}
+.main__container {
+    display: flex;
+}
+.main__content {
+    flex: 0 1 50%;
+    align-self: flex-end;
+    padding-bottom: 60px;
+    padding-right: 20px;
+}
+.main__title {
+    font-family: CalSans;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    color: #121212;
+}
+.main__title span{
+    color:#FF6428;
+}
+.main__title:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.main__text {
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 420px;
+}
+.main__text:not(:last-child) {
+    margin-bottom: 31px;
+}
+.actions-main {
+    display: flex;
+    align-items: center;
+}
+.actions-main__button {
+    padding: 18.5px 48px;
+    background-color: #FF6428;
+    border-radius: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 26px;
+}
+.actions-main__button:not(:last-child) {
+    margin-right: 40px;
+}
+.actions-main__icon {
+}
+.actions-main__icon:not(:last-child) {
+    margin-right: 27px;
+}
+.main__decor {
+    flex: 0 1 50%;
+}
+.main__image {
+    margin-right: -135px;
 }
