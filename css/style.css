@@ -62,6 +62,8 @@ body{
 }
 .page__why {
 }
+.page__reviews { 
+}
 
 a{
     text-decoration: none;
@@ -399,8 +401,6 @@ li{
     column-gap: 70px;
     row-gap: 35px;
 }
-.categories__item {
-}
 .item-category {
     position: relative;
 }
@@ -598,5 +598,36 @@ li{
     .why__items {
         justify-content: stretch;
         grid-template-columns: repeat(1,auto);
+    }
+}
+
+/*? -----REVIEWS-------------------------------- */
+
+
+.reviews {
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+.reviews__container {
+}
+.reviews__title {
+    margin-bottom: 100px;
+}
+@media (max-width: 991.98px) {
+    .reviews {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    } 
+    .reviews__title {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .reviews {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } 
+    .reviews__title {
+        margin-bottom: 30px;
     }
 }
